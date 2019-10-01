@@ -1,4 +1,4 @@
-use elvish-libs/notes/hugo
+use github.com/SethCurry/elvish-libs/hugo
 
 fn -root {
     if (has-env NOTES_ROOT) {
