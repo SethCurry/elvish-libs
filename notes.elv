@@ -2,7 +2,7 @@ use github.com/SethCurry/elvish-libs/hugo
 
 fn -root {
     if (has-env NOTES_ROOT) {
-        put {$E:NOTES_ROOT}
+        put $E:NOTES_ROOT
         return
     }
     put "~/.notes"
