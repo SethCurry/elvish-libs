@@ -57,7 +57,7 @@ fn -dir-has-index [dirpath]{
 }
 
 fn -edit-file [path]{
-    exec (-editor) $path
+    (external (-editor)) $path
 }
 
 fn -note-dir [name]{
