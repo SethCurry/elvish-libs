@@ -19,7 +19,7 @@ fn -format-message [level message fields]{
     out=[&time=(date --rfc-3339='seconds') &level=$level &message=$message]
 
     if (not-eq $fields []) {
-        for key (keys $fields) {
+        for key [(keys $fields)] {
             out=(assoc $out $key $fields[$key])
         }
     }
