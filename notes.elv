@@ -65,7 +65,7 @@ fn -note-dir [name]{
 }
 
 fn -note-path [name]{
-    put (-note-dir $name).md
+    put (-note-dir $name)".md"
 }
 
 fn edit [name]{
