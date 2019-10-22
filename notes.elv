@@ -23,8 +23,9 @@ fn -dir-exists [path]{
 fn -editor {
     if (has-env EDITOR) {
         put $E:EDITOR
+    } else {
+        put "vim"
     }
-    put "vim"
 }
 
 fn -create-note [title path]{
